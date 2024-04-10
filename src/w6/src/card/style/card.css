@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  max-width: 25rem;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  background-color: oklch(98% 0.01 60deg);
+  border-radius: 0.75rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.card {
+  overflow-y: hidden;
+  color: oklch(30% 0.01 60deg);
+}
+.card__top {
+  padding-block: 0.75rem;
+  padding-inline: 1rem;
+}
+.card__bottom {
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+.card__title {
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.0094rem;
+}
+.card__subtitle {
+  margin-top: 0.25rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.0156rem;
+}
+.card__p {
+  margin-top: 2rem;
+  color: oklch(50% 0.01 60deg);
+}
+
+.card__bottom .card__title {
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.0313rem;
+}
+
+.card__bottom .card__subtitle {
+  margin-top: 0;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: oklch(50% 0.01 60deg);
+  letter-spacing: 0.0156rem;
+}

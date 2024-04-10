@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: oklch(5% 0 0);
+}
+
+.section {
+  margin-top: 2rem;
+  color: oklch(100% 0 0);
+}
+.section:first-child {
+  margin-top: 0;
+}
+.section h2 {
+  text-align: center;
+}
+
+.container {
+  max-width: 80rem;
+  padding: 2.5rem;
+  margin-inline: auto;
+  background-color: oklch(20% 0 0);
+}
+
+.card {
+  background-color: oklch(40% 0 0);
+}
+.card__title {
+  font-weight: 700;
+  color: oklch(90% 0 0);
+}
+.card__content {
+  margin-top: 0.25rem;
+  color: oklch(70% 0 0);
+}
+
+.flex-container {
+  display: flex;
+}

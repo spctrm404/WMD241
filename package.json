@@ -1,0 +1,16 @@
+{
+  "name": "wmd241",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^16.3.1",
+    "stylelint-config-recess-order": "^5.0.0",
+    "stylelint-config-standard-scss": "^13.1.0"
+  }
+}

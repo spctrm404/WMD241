@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selector examples</title>
+    <link rel="stylesheet" href="./style/selector.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="grand-parent">
+        <span class="text">Hi I`m a grand-parent div</span>
+        <div class="parent">
+          <span class="text">Hi I`m a parent div</span>
+          <div class="child">
+            <span class="text">Hi I`m a child div</span>
+          </div>
+        </div>
+      </div>
+      <div class="grand-parent common" id="king">
+        <span class="text">Hi I`m a grand-parent div</span>
+        <div class="parent common" id="god">
+          <span class="text">Hi I`m a parent div</span>
+          <div class="child common" id="general">
+            <span class="text">Hi I`m a child div</span>
+          </div>
+        </div>
+      </div>
+      <div class="grand-parent common">
+        <span class="text">Hi I`m a grand-parent div</span>
+        <div class="parent common">
+          <span class="text">Hi I`m a parent div</span>
+          <div class="child common">
+            <span class="text">Hi I`m a child div</span>
+          </div>
+        </div>
+      </div>
+      <div class="grand-parent common">
+        <span class="text">Hi I`m a grand-parent div</span>
+        <div class="parent common">
+          <span class="text">Hi I`m a parent div</span>
+          <div class="child common">
+            <span class="text">Hi I`m a child div</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  background-color: oklch(0% 0 0deg);
+}
+
+.container {
+  max-width: 80rem;
+  padding-inline: 2.5rem;
+  margin-inline: auto;
+  overflow-y: hidden;
+  background-color: oklch(15% 0 0deg);
+}

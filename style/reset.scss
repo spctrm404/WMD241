@@ -9,8 +9,6 @@
 
 /* Prevent font size inflation */
 html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
   text-size-adjust: none;
   color-scheme: dark light;
   hanging-punctuation: first last;
@@ -70,7 +68,7 @@ h6 {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
-  color: currentColor;
+  color: currentcolor;
 }
 
 /* Make images easier to work with */
@@ -78,8 +76,8 @@ img,
 picture,
 svg,
 video {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -102,6 +100,7 @@ textarea:not([rows]) {
 }
 
 /* improve readability with max-width on paragraphs and lists */
+
 /* prevent orphans in supported browsers */
 p,
 li {

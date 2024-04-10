@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: oklch(5% 0 0);
+}
+
+.container {
+  max-width: 50rem;
+  padding: 1.5rem;
+  margin-inline: auto;
+  background-color: oklch(20% 0 0);
+}
+
+.grand-parent {
+  max-width: 25rem;
+  margin-top: 1.5rem;
+  color: oklch(40% 0.1 10);
+  background-color: oklch(90% 0.1 10);
+}
+.grand-parent:first-child {
+  margin-top: 0;
+}
+
+.parent {
+  color: oklch(20% 0.1 70);
+  background-color: oklch(70% 0.1 70);
+}
+
+.child {
+  color: oklch(100% 0.1 130);
+  background-color: oklch(50% 0.1 130);
+}
+
+.common {
+  padding: 1rem;
+}
