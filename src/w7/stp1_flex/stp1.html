@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex basic</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="section">
+      <h1>Flex Basic</h1>
+    </div>
+    <div class="section">
+      <h2>flex</h2>
+      <div class="container">
+        <div>동해물과</div>
+        <div>백두산이 마르고</div>
+        <div>닳도록 하느님이 보우하사</div>
+        <div>우리나라 만세 무궁화 삼천리</div>
+        <div>화려강산 대한사람 대한으로 길이 보전하세</div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>flex applied</h2>
+      <p>가능한 최대로 벌어지던 div가 가능한 최소로 줄어드려 한다.</p>
+      <div class="container flex">
+        <div>동해물과</div>
+        <div>백두산이 마르고</div>
+        <div>닳도록 하느님이 보우하사</div>
+        <div>우리나라 만세 무궁화 삼천리</div>
+        <div>화려강산 대한사람 대한으로 길이 보전하세</div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>flex applied 2</h2>
+      <p>
+        플렉스 컨테이너보다 자식 요소들의 너비 합이 더 작으면 좌측 정렬된다.
+      </p>
+      <div class="container flex">
+        <div>자녀1</div>
+        <div>자녀2</div>
+        <div>자녀3</div>
+        <div>자녀4</div>
+        <div>자녀5</div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>flex grow and shrink</h2>
+      <p>
+        플렉스 컨테이너의 자녀들에게 flex-grow, flex-shink 속성을 부여해 부모에
+        맞게 얼마나 커지거나 얼마나 줄어들게 할지의 여부를 정할 수 있다 기본값은
+        각 각 0, 1로, 안커지고, 균등하게 줄어들려고 한다.
+      </p>
+      <div class="container flex">
+        <div class="flex-child-opt1">자녀1</div>
+        <div class="flex-child-opt1">자녀2</div>
+        <div class="flex-child-opt1">자녀3</div>
+        <div class="flex-child-opt1">자녀4</div>
+        <div class="flex-child-opt1">자녀5</div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>flex basis</h2>
+      <p>
+        부모에 맞게 작아지는 상황에서 동일한 크기를 갖게 하려면 flex-basis: 0;
+        flex-grow: 1; flex-shink: 1; 로 설정하면 된다.
+      </p>
+      <div class="container flex">
+        <div class="flex-child-opt2">동해물과</div>
+        <div class="flex-child-opt2">백두산이 마르고</div>
+        <div class="flex-child-opt2">닳도록 하느님이 보우하사</div>
+        <div class="flex-child-opt2">우리나라 만세 무궁화 삼천리</div>
+        <div class="flex-child-opt2">
+          화려강산 대한사람 대한으로 길이 보전하세
+        </div>
+      </div>
+      <p>
+        부모와 무관하게 일정 사이즈를 갖게 하려면 flex-shink: 0; width: 원하는
+        값;으로 설정하면 된다.
+      </p>
+      <div class="container flex">
+        <div class="flex-child-opt3">동해물과</div>
+        <div class="flex-child-opt3">백두산이 마르고</div>
+        <div class="flex-child-opt3">닳도록 하느님이 보우하사</div>
+        <div class="flex-child-opt3">우리나라 만세 무궁화 삼천리</div>
+        <div class="flex-child-opt3">
+          화려강산 대한사람 대한으로 길이 보전하세
+        </div>
+      </div>
+      <div class="section">
+        <h2>flex gap</h2>
+        <p>gap을 설정하면 일정 간격으로 떨어진다.</p>
+        <div class="container flex flex-opt1">
+          <div>자녀1</div>
+          <div>자녀2</div>
+          <div>자녀3</div>
+          <div>자녀4</div>
+          <div>자녀5</div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>justify content</h2>
+        <p>정렬 방향에 대해 정렬 방식을 설정할 수 있다.</p>
+        <div class="container flex flex-opt1 flex-justify">
+          <div>자녀1</div>
+          <div>자녀2</div>
+          <div>자녀3</div>
+          <div>자녀4</div>
+          <div>자녀5</div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>align items</h2>
+      <p>정렬 방향의 수직 방향에 대해 정렬 방식을 설정할 수 있다.</p>
+      <div class="container flex flex-opt1 flex-align">
+        <div class="flex-child-opt2">동해물과</div>
+        <div class="flex-child-opt2">백두산이 마르고</div>
+        <div class="flex-child-opt2">닳도록 하느님이 보우하사</div>
+        <div class="flex-child-opt2">우리나라 만세 무궁화 삼천리</div>
+        <div class="flex-child-opt2">
+          화려강산 대한사람 대한으로 길이 보전하세
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>wrap</h2>
+      <p>부모가 자녀를 다 못담게 되면 줄바꾸기를 하게 할 수 있다.</p>
+      <div class="container flex flex-opt1 flex-opt2">
+        <div>동해물과</div>
+        <div>백두산이 마르고</div>
+        <div>닳도록 하느님이 보우하사</div>
+        <div>우리나라 만세 무궁화 삼천리</div>
+        <div>화려강산 대한사람 대한으로 길이 보전하세</div>
+      </div>
+      <div class="container flex flex-opt1 flex-opt2">
+        <div class="flex-child-opt4">동해물과</div>
+        <div class="flex-child-opt4">백두산이 마르고</div>
+        <div class="flex-child-opt4">닳도록 하느님이 보우하사</div>
+        <div class="flex-child-opt4">우리나라 만세 무궁화 삼천리</div>
+        <div class="flex-child-opt4">
+          화려강산 대한사람 대한으로 길이 보전하세
+        </div>
+      </div>
+      <div class="container flex flex-opt1 flex-opt2">
+        <div class="flex-child-opt5">동해물과</div>
+        <div class="flex-child-opt5">백두산이 마르고</div>
+        <div class="flex-child-opt5">닳도록 하느님이 보우하사</div>
+        <div class="flex-child-opt5">우리나라 만세 무궁화 삼천리</div>
+        <div class="flex-child-opt5">
+          화려강산 대한사람 대한으로 길이 보전하세
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

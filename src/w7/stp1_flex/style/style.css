@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.section:first-child {
+  margin-top: 0;
+}
+
+.section > h1,
+.section > h2 {
+  text-align: center;
+}
+
+.section > p {
+  max-width: 800px;
+  padding-inline: 2.5rem;
+  margin-inline: auto;
+}
+
+.container {
+  max-width: 800px;
+  padding-inline: 2.5rem;
+  margin-inline: auto;
+  margin-top: 1.25rem;
+  color: oklch(15% 0 60);
+  background-color: oklch(95% 0 60);
+}
+
+.container:first-child {
+  margin-top: 0;
+}
+
+.container > div {
+  padding: 1.5rem;
+}
+
+.container > div:nth-child(1) {
+  color: oklch(15% 0.05 0);
+  background-color: oklch(95% 0.05 0);
+  border: 1px solid oklch(25% 0.05 0);
+}
+
+.container > div:nth-child(2) {
+  color: oklch(15% 0.05 50);
+  background-color: oklch(95% 0.05 50);
+  border: 1px solid oklch(25% 0.05 50);
+}
+
+.container > div:nth-child(3) {
+  color: oklch(15% 0.05 100);
+  background-color: oklch(95% 0.05 100);
+  border: 1px solid oklch(25% 0.05 100);
+}
+
+.container > div:nth-child(4) {
+  color: oklch(15% 0.05 150);
+  background-color: oklch(95% 0.05 150);
+  border: 1px solid oklch(25% 0.05 150);
+}
+
+.container > div:nth-child(5) {
+  color: oklch(15% 0.05 200);
+  background-color: oklch(95% 0.05 200);
+  border: 1px solid oklch(25% 0.05 200);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-child-opt1 {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.flex-child-opt2 {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.flex-child-opt3 {
+  flex-shrink: 0;
+  width: 400px;
+}
+
+.flex:has(.flex-child-opt3) {
+  overflow-x: scroll;
+}
+
+.flex-opt1 {
+  gap: 1rem;
+}
+
+.flex-justify {
+  justify-content: left;
+  /* justify-content: right; */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+}
+
+.flex-align {
+  align-items: stretch;
+  /* align-items: start; */
+  align-items: end;
+  align-items: center;
+}
+
+.flex-opt2 {
+  flex-wrap: wrap;
+}
+
+.flex-child-opt4 {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+.flex-child-opt5 {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-width: 12.5rem;
+}
