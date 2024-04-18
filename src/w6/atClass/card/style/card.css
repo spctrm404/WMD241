@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Cute Font', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card.card--color-blue {
+  background-color: oklch(98% 0.025 200);
+}
+
+.card {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 25rem;
+  background-color: oklch(98% 0.025 90);
+  overflow-x: hidden;
+  /* padding: 1rem; */
+  border-radius: 0.75rem;
+  margin-top: 3rem;
+}
+
+.card:first-child {
+  margin-top: 0;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__top {
+  /* margin: 1rem; */
+  padding-inline: 1rem;
+  padding-block: 0.75rem;
+}
+
+.card__bottom {
+  padding: 1rem;
+}
+
+.card__p {
+  margin-top: 2rem;
+}
+
+.card__title {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.card__subtitle {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  line-height: 1.25rem;
+}
+
+.card__bottom .card__title {
+  font-weight: 400;
+}
+
+/* .card__bottom > .card__title {
+  font-weight: 400;
+} */
+
+.card__bottom .card__subtitle {
+  margin-top: 0;
+}
