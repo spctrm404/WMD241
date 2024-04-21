@@ -4,6 +4,11 @@
 
 body {
   margin: 0;
+  font-family: 'futura-pt', sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
   background-color: #f3f3f3;
 }
 
@@ -18,8 +23,17 @@ body {
   justify-content: space-between;
   padding-block: 1.25rem;
   padding-inline: 2.5rem;
+  font-weight: 500;
   /* for work */
   /* background-color: aquamarine; */
+}
+
+.navigation--type-top {
+  border-bottom: 2px solid #eee;
+}
+
+.navigation--type-bottom {
+  font-size: 1rem;
 }
 
 .navigation > .navigation__menu-group {
@@ -43,6 +57,24 @@ body {
 
 .navigation__logo {
   width: 3.75rem;
-  height: 1.75rem;
-  background-color: black;
+  /* height: 1.75rem; */
+  aspect-ratio: 45 / 21;
+}
+
+.navigation__logo > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.navigation__login {
+  font-size: 1rem;
+}
+
+.navigation__more {
+  color: #ff764d;
+}
+
+.navigation__free {
+  color: #0000ff;
 }
