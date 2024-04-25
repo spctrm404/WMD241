@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.navigation {
+  font-size: 24px;
+  background-color: #000;
+  color: #fff;
+  padding-inline: 30px;
+  padding-block: 19px;
+}
+.navigation__container {
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__menu-group {
+  display: flex;
+  align-items: center;
+}
+.navigation__menu-group--left {
+  gap: 13px;
+}
+.navigation__menu-group--right {
+  gap: 16px;
+}
+@media (width < 56.25rem) {
+  .navigation__menu-group--right {
+    display: none;
+  }
+}
+.navigation__logo {
+  height: 2rem;
+  aspect-ratio: 200/51;
+}
+.navigation__page-title {
+  margin-top: 3px;
+  padding-top: 3px;
+  padding-left: 13px;
+  line-height: 23px;
+  border-left: 2px solid #fff;
+}
+.navigation__btn {
+  padding-inline: 23px;
+  padding-block: 7px;
+  line-height: 36px;
+  border-radius: 8px;
+}
+.navigation__btn--outline {
+  border: 0.0625rem solid #fff;
+  background-color: #191a1b;
+}
+.navigation__btn--fill {
+  background-color: #515fcb;
+}
+
+.hero {
+  background-color: #dadbee;
+  padding-inline: 30px;
+  padding-block: 80px 115px;
+}
+.hero__container {
+  width: 90%;
+  margin-inline: auto;
+}
+.hero__text {
+  font-size: 5rem;
+  line-height: 7.5rem;
+  text-align: center;
+  width: 80%;
+  margin-inline: auto;
+}
+.hero__search-input {
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 0.0625rem solid #000;
+  background-color: #fff;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-inline: auto;
+  display: block;
+  width: 80%;
+}
+
+.feature {
+  padding: 30px;
+}
+.feature__container {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  row-gap: 3rem;
+  width: 80%;
+  margin-inline: auto;
+  padding-left: 0;
+  list-style: none;
+  margin-block: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature__container > * {
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 400px;
+}
+
+.card {
+  display: flex;
+  gap: 1.875rem;
+  padding-top: 3rem;
+}
+.card__img {
+  max-width: 5rem;
+}

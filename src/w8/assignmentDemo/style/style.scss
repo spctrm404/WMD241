@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.navigation {
+  font-size: 24px;
+  background-color: #000;
+  color: #fff;
+  padding-inline: 30px;
+  padding-block: 19px;
+  &__container {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu-group {
+    display: flex;
+    align-items: center;
+    &--left {
+      gap: 13px;
+    }
+    &--right {
+      gap: 16px;
+      @media (width < 56.25rem) {
+        & {
+          display: none;
+        }
+      }
+    }
+  }
+  &__logo {
+    height: 2rem;
+    aspect-ratio: 200 / 51;
+  }
+  &__page-title {
+    margin-top: 3px;
+    padding-top: 3px;
+    padding-left: 13px;
+    line-height: 23px;
+    border-left: 2px solid #fff;
+  }
+  &__btn {
+    padding-inline: 23px;
+    padding-block: 7px;
+    line-height: 36px;
+    border-radius: 8px;
+    &--outline {
+      border: 0.0625rem solid #fff;
+      background-color: #191a1b;
+    }
+    &--fill {
+      background-color: #515fcb;
+    }
+  }
+}
+
+.hero {
+  background-color: #dadbee;
+  padding-inline: 30px;
+  padding-block: 80px 115px;
+  &__container {
+    width: 90%;
+    margin-inline: auto;
+  }
+  &__text {
+    font-size: 5rem;
+    line-height: 7.5rem;
+    text-align: center;
+    width: 80%;
+    margin-inline: auto;
+  }
+  &__search-input {
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 0.0625rem solid #000;
+    background-color: #fff;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-inline: auto;
+    display: block;
+    width: 80%;
+  }
+}
+
+.feature {
+  padding: 30px;
+  &__container {
+    column-gap: 1.5rem;
+    row-gap: 3rem;
+    width: 80%;
+    margin-inline: auto;
+    padding-left: 0;
+    list-style: none;
+    margin-block: 0;
+    display: flex;
+    flex-wrap: wrap;
+    & > * {
+      flex-basis: 0;
+      flex-grow: 1;
+      // 메모: 이따 제대로 된 사이즈 확정할 것
+      min-width: 400px;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  gap: 1.875rem;
+  padding-top: 3rem;
+  &__area {
+    &-left {
+    }
+    &-right {
+    }
+  }
+  &__img {
+    max-width: 5rem;
+  }
+  &__title {
+  }
+  &__desc {
+  }
+  &__more {
+  }
+}
