@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625rem;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.fixed {
+  position: fixed;
+}
+.fixed--pos-tl {
+  top: 2.25rem;
+  left: 2.25rem;
+}
+.fixed--pos-tr {
+  top: 2.25rem;
+  right: 2.25rem;
+}
+.fixed--pos-br {
+  right: 2.25rem;
+  bottom: 2.25rem;
+}
+.fixed--pos-bl {
+  right: 9.375rem;
+  bottom: 2.25rem;
+  left: 2.25rem;
+}
+.fixed--role-title {
+  display: block;
+  width: 260px;
+  aspect-ratio: 519/58;
+}
+.fixed--role-contact {
+  margin-block: 0;
+  font-weight: 700;
+}
+.fixed--role-list {
+  padding-left: 0;
+  margin-block: 0;
+  line-height: 1.8rem;
+  text-transform: capitalize;
+  list-style: none;
+}
+.fixed--role-about {
+  max-width: 60ch;
+}
+.fixed--role-about > p {
+  margin-block: 0;
+}
+.fixed__desc {
+  font-weight: 700;
+  text-wrap: balance;
+}
+.fixed__copyrights {
+  font-size: 0.75rem;
+}
+.fixed__copyrights > a {
+  text-decoration: underline;
+}
+.fixed__policy {
+  display: block;
+  margin-top: 1.5625rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.issue {
+  display: grid;
+  grid-template-rows: 1fr 1fr minmax(3.125rem, 9.375rem) 1fr;
+  grid-template-columns: 1fr minmax(0, 30rem) 1fr;
+  height: 100svh;
+}
+.issue__img {
+  display: block;
+  grid-row: 2;
+  grid-column: 2;
+  max-width: 100%;
+}
+.issue__text {
+  grid-row: 3;
+  grid-column: 2;
+  font-weight: 700;
+  text-align: center;
+}
+.issue__title {
+  margin-block: 0;
+  text-transform: capitalize;
+}
+.issue__desc {
+  margin-top: 1.5625rem;
+  margin-bottom: 0;
+}
+.issue__buy-link {
+  text-transform: uppercase;
+}
+
+#issue-7 {
+  background-color: #fd5f8d;
+}
+#issue-6 {
+  background-color: #fff;
+}
+#issue-5 {
+  background-color: #00c1b5;
+}
+#issue-4 {
+  background-color: #ff651a;
+}
+#issue-3 {
+  background-color: #ffbe00;
+}
+#issue-2 {
+  background-color: #1d3fbb;
+}
+#issue-1 {
+  background-color: #e30512;
+}
