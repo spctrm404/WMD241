@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -33,6 +38,9 @@ a {
     &-tr {
       top: $margin-y;
       right: $margin-x;
+      @media (width < 37.5rem) {
+        display: none;
+      }
     }
     &-br {
       right: $margin-x;
@@ -42,6 +50,9 @@ a {
       right: 9.375rem;
       bottom: $margin-y;
       left: $margin-x;
+      @media (width < 37.5rem) {
+        display: none;
+      }
     }
   }
   &--role {
@@ -88,6 +99,7 @@ a {
 }
 
 .issue {
+  scroll-snap-align: start;
   display: grid;
   grid-template-rows: 1fr 1fr minmax(3.125rem, 9.375rem) 1fr;
   grid-template-columns: 1fr minmax(0, 30rem) 1fr;
