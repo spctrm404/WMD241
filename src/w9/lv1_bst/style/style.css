@@ -15,8 +15,34 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5625rem;
+  background-color: #fd5f8d;
+  animation: bg linear;
+  animation-timeline: scroll();
 }
 
+@keyframes bg {
+  0% {
+    background-color: #fd5f8d;
+  }
+  16.666667% {
+    background-color: #fff;
+  }
+  33.333333% {
+    background-color: #00c1b5;
+  }
+  50% {
+    background-color: #ff651a;
+  }
+  66.666667% {
+    background-color: #ffbe00;
+  }
+  83.3333337% {
+    background-color: #1d3fbb;
+  }
+  100% {
+    background-color: #e30512;
+  }
+}
 a {
   color: #000;
   text-decoration: none;
@@ -29,12 +55,12 @@ a:hover {
   position: fixed;
 }
 .fixed--pos-tl {
-  top: 2.25rem;
-  left: 2.25rem;
+  top: 1.5rem;
+  left: 1.5rem;
 }
 .fixed--pos-tr {
-  top: 2.25rem;
-  right: 2.25rem;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 @media (width < 37.5rem) {
   .fixed--pos-tr {
@@ -42,13 +68,13 @@ a:hover {
   }
 }
 .fixed--pos-br {
-  right: 2.25rem;
-  bottom: 2.25rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
 }
 .fixed--pos-bl {
   right: 9.375rem;
-  bottom: 2.25rem;
-  left: 2.25rem;
+  bottom: 1.5rem;
+  left: 1.5rem;
 }
 @media (width < 37.5rem) {
   .fixed--pos-bl {
@@ -57,8 +83,8 @@ a:hover {
 }
 .fixed--role-title {
   display: block;
-  width: 260px;
-  aspect-ratio: 519/58;
+  width: 16.25rem;
+  aspect-ratio: 8.9482758621;
 }
 .fixed--role-contact {
   margin-block: 0;
@@ -98,18 +124,23 @@ a:hover {
 .issue {
   scroll-snap-align: start;
   display: grid;
-  grid-template-rows: 1fr 1fr minmax(3.125rem, 9.375rem) 1fr;
+  grid-template-rows: 4.8159922929rem 1fr 1fr minmax(3.125rem, 9.375rem) 1fr 4.8159922929rem;
   grid-template-columns: 1fr minmax(0, 30rem) 1fr;
   height: 100svh;
 }
+@media (width < 37.5rem) {
+  .issue {
+    grid-template-columns: 1fr minmax(0, 20rem) 1fr;
+  }
+}
 .issue__img {
   display: block;
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 2;
   max-width: 100%;
 }
 .issue__text {
-  grid-row: 3;
+  grid-row: 4;
   grid-column: 2;
   font-weight: 700;
   text-align: center;
@@ -124,26 +155,4 @@ a:hover {
 }
 .issue__buy-link {
   text-transform: uppercase;
-}
-
-#issue-7 {
-  background-color: #fd5f8d;
-}
-#issue-6 {
-  background-color: #fff;
-}
-#issue-5 {
-  background-color: #00c1b5;
-}
-#issue-4 {
-  background-color: #ff651a;
-}
-#issue-3 {
-  background-color: #ffbe00;
-}
-#issue-2 {
-  background-color: #1d3fbb;
-}
-#issue-1 {
-  background-color: #e30512;
 }

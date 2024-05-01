@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+$margin-y: 1.5rem;
+$margin-x: 1.5rem;
+$title-w: 16.25rem;
+$title-ratio: 519 / 58;
+
 * {
   box-sizing: border-box;
 }
@@ -16,6 +21,33 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5625rem;
+  background-color: #fd5f8d;
+  animation: bg linear;
+  animation-timeline: scroll();
+}
+
+@keyframes bg {
+  0% {
+    background-color: #fd5f8d;
+  }
+  16.666667% {
+    background-color: #fff;
+  }
+  33.333333% {
+    background-color: #00c1b5;
+  }
+  50% {
+    background-color: #ff651a;
+  }
+  66.666667% {
+    background-color: #ffbe00;
+  }
+  83.3333337% {
+    background-color: #1d3fbb;
+  }
+  100% {
+    background-color: #e30512;
+  }
 }
 
 a {
@@ -29,8 +61,6 @@ a {
 .fixed {
   position: fixed;
   &--pos {
-    $margin-y: 2.25rem;
-    $margin-x: 2.25rem;
     &-tl {
       top: $margin-y;
       left: $margin-x;
@@ -58,8 +88,8 @@ a {
   &--role {
     &-title {
       display: block;
-      width: 260px;
-      aspect-ratio: 519 / 58;
+      width: $title-w;
+      aspect-ratio: $title-ratio;
     }
     &-contact {
       margin-block: 0;
@@ -101,17 +131,26 @@ a {
 .issue {
   scroll-snap-align: start;
   display: grid;
-  grid-template-rows: 1fr 1fr minmax(3.125rem, 9.375rem) 1fr;
+  grid-template-rows:
+    calc(2 * $margin-y + 1 / $title-ratio * $title-w) 1fr 1fr minmax(
+      3.125rem,
+      9.375rem
+    )
+    1fr
+    calc(2 * $margin-y + 1 / $title-ratio * $title-w);
   grid-template-columns: 1fr minmax(0, 30rem) 1fr;
   height: 100svh;
+  @media (width < 37.5rem) {
+    grid-template-columns: 1fr minmax(0, 20rem) 1fr;
+  }
   &__img {
     display: block;
-    grid-row: 2;
+    grid-row: 3;
     grid-column: 2;
     max-width: 100%;
   }
   &__text {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 2;
     font-weight: 700;
     text-align: center;
@@ -130,25 +169,25 @@ a {
 }
 
 #issue {
-  &-7 {
-    background-color: #fd5f8d;
-  }
-  &-6 {
-    background-color: #fff;
-  }
-  &-5 {
-    background-color: #00c1b5;
-  }
-  &-4 {
-    background-color: #ff651a;
-  }
-  &-3 {
-    background-color: #ffbe00;
-  }
-  &-2 {
-    background-color: #1d3fbb;
-  }
-  &-1 {
-    background-color: #e30512;
-  }
+  // &-7 {
+  //   background-color: #fd5f8d;background-color
+  // }
+  // &-6 {
+  //   background-color: #fff;background-color
+  // }
+  // &-5 {
+  //   background-color: #00c1b5;background-color
+  // }
+  // &-4 {
+  //   background-color: #ff651a;background-color
+  // }
+  // &-3 {
+  //   background-color: #ffbe00;background-color
+  // }
+  // &-2 {
+  //   background-color: #1d3fbb;background-color
+  // }
+  // &-1 {
+  //   background-color: #e30512;background-color
+  // }
 }
