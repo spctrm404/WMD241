@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: oklch(0.3 0 0);
+  background-color: oklch(0.9 0 0);
+}
+
+p {
+  margin-block: 0;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  > h2 {
+    text-align: center;
+  }
+}
+
+.container {
+  max-width: 60rem;
+  padding: 5rem;
+  margin-inline: auto;
+  background-color: oklch(0.95 0 0);
+  &--opt-pos-rel {
+    position: relative;
+  }
+}
+
+.card {
+  margin-top: 2rem;
+
+  background-color: oklch(1 0 0);
+  border: 1px solid oklch(0.5 0 0);
+  border-radius: 0.75rem;
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+  @at-root .section--opt-child-pos-abs & {
+    &:nth-child(3) {
+      position: absolute;
+      top: 20rem;
+      left: 20rem;
+    }
+  }
+  &--opt {
+    &-new {
+      position: relative;
+      &::after {
+        position: absolute;
+        top: calc(-0.5lh - 0.25rem);
+        right: calc(-0.5lh - 0.25rem);
+        z-index: 999;
+        height: 1lh;
+        aspect-ratio: 1 / 1;
+        padding: 0.25rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: oklch(0.95 0.02 20);
+        text-align: center;
+        content: 'N';
+        background-color: oklch(0.6 0.2 20);
+        border-radius: 62.4375rem;
+      }
+    }
+  }
+  &__top {
+    padding-block: 1.25rem;
+    padding-inline: 1.5rem;
+  }
+  &__middle {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+  &__bottom {
+    padding-block: 1.25rem;
+    padding-inline: 1.5rem;
+  }
+  &__author {
+    font-weight: 600;
+  }
+  &__author-role {
+  }
+  &__title {
+    font-weight: 600;
+  }
+  &__subtitle {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: oklch(0.5 0 0);
+  }
+  &__desc {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}

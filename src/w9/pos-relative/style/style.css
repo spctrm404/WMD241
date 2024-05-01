@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: oklch(0.3 0 0);
+  background-color: oklch(0.9 0 0);
+}
+
+p {
+  margin-block: 0;
+}
+
+img {
+  display: block;
+}
+
+.section > h2 {
+  text-align: center;
+}
+
+.container {
+  max-width: 60rem;
+  padding: 5rem;
+  margin-inline: auto;
+  background-color: oklch(0.95 0 0);
+}
+
+.card {
+  margin-top: 2rem;
+  background-color: oklch(1 0 0);
+  border: 1px solid oklch(0.5 0 0);
+  border-radius: 0.75rem;
+}
+.card:nth-child(1) {
+  margin-top: 0;
+}
+.section--opt-pos-rel .card {
+  position: relative;
+}
+.section--opt-pos-rel .card:nth-child(1) {
+  left: 1rem;
+}
+.section--opt-pos-rel .card:nth-child(2) {
+  top: -2rem;
+  left: 2rem;
+}
+.section--opt-pos-rel .card:nth-child(3) {
+  top: -4rem;
+  left: 3rem;
+}
+.section--opt-pos-rel .card:nth-child(4) {
+  top: -6rem;
+  left: 4rem;
+}
+.section--opt-pos-rel .card:nth-child(5) {
+  top: -8rem;
+  left: 5rem;
+}
+
+.section--opt-margin-negative .card {
+  position: relative;
+  margin-top: -2rem;
+}
+.section--opt-margin-negative .card:nth-child(1) {
+  z-index: 1;
+  margin-top: 0;
+}
+.section--opt-margin-negative .card:nth-child(2) {
+  z-index: 2;
+}
+.section--opt-margin-negative .card:nth-child(3) {
+  z-index: 3;
+}
+.section--opt-margin-negative .card:nth-child(4) {
+  z-index: 4;
+}
+.section--opt-margin-negative .card:nth-child(5) {
+  z-index: 5;
+}
+
+.card__top {
+  padding-block: 1.25rem;
+  padding-inline: 1.5rem;
+}
+.card__middle {
+  width: 100%;
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__bottom {
+  padding-block: 1.25rem;
+  padding-inline: 1.5rem;
+}
+.card__author {
+  font-weight: 600;
+}
+.card__title {
+  font-weight: 600;
+}
+.card__subtitle {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: oklch(0.5 0 0);
+}
+.card__desc {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

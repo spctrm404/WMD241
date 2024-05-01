@@ -104,7 +104,6 @@ a {
   grid-template-rows: 1fr 1fr minmax(3.125rem, 9.375rem) 1fr;
   grid-template-columns: 1fr minmax(0, 30rem) 1fr;
   height: 100svh;
-
   &__img {
     display: block;
     grid-row: 2;
