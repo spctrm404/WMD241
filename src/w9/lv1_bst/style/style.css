@@ -5,7 +5,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  /*scroll-snap-type: y mandatory;*/
 }
 
 body {
@@ -21,22 +21,22 @@ body {
 }
 
 @keyframes bg {
-  0% {
+  0%, 8.3333335% {
     background-color: #fd5f8d;
   }
-  16.666667% {
+  16.666667%, 25% {
     background-color: #fff;
   }
-  33.333333% {
+  33.333333%, 41.6666665% {
     background-color: #00c1b5;
   }
-  50% {
+  50%, 58.3333335% {
     background-color: #ff651a;
   }
-  66.666667% {
+  66.666667%, 75% {
     background-color: #ffbe00;
   }
-  83.3333337% {
+  83.3333337%, 92% {
     background-color: #1d3fbb;
   }
   100% {
