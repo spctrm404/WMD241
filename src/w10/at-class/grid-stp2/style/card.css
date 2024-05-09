@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+  --card-m-y: 1rem;
+  --card-m-x: 1.5rem;
+}
+
+.card {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  background-color: oklch(1 0 0);
+  border: 1px solid oklch(0.5 0 0);
+  border-radius: 0.75rem;
+}
+.section--opt-pos-rel .card {
+  position: relative;
+}
+.section--opt-pos-rel .card:nth-child(1) {
+  left: 1rem;
+}
+.section--opt-pos-rel .card:nth-child(2) {
+  left: 2rem;
+  top: -10rem;
+}
+.section--opt-pos-rel .card:nth-child(3) {
+  left: 3rem;
+  top: -20rem;
+}
+.section--opt-pos-rel .card:nth-child(4) {
+  left: 4rem;
+  top: -30rem;
+}
+.section--opt-pos-rel .card:nth-child(5) {
+  left: 5rem;
+  top: -40rem;
+}
+.section--opt-margin-negative .card {
+  margin-top: -10rem;
+  position: relative;
+}
+.section--opt-margin-negative .card:first-child {
+  margin-top: 0;
+}
+.section--opt-margin-negative .card:nth-child(1) {
+  z-index: 1;
+}
+.section--opt-margin-negative .card:nth-child(2) {
+  z-index: 2;
+}
+.section--opt-margin-negative .card:nth-child(3) {
+  z-index: 3;
+}
+.section--opt-margin-negative .card:nth-child(4) {
+  z-index: 4;
+}
+.section--opt-margin-negative .card:nth-child(5) {
+  z-index: 5;
+}
+.section--opt-margin-negative .card:nth-child(6) {
+  z-index: 6;
+}
+.section--opt-margin-negative .card:nth-child(7) {
+  z-index: 7;
+}
+.section--opt-margin-negative .card:nth-child(8) {
+  z-index: 8;
+}
+.section--opt-margin-negative .card:nth-child(9) {
+  z-index: 9;
+}
+.section--opt-margin-negative .card:nth-child(10) {
+  z-index: 10;
+}
+.section--opt-margin-negative .card:nth-child(11) {
+  z-index: 11;
+}
+.section--opt-margin-negative .card:nth-child(12) {
+  z-index: 12;
+}
+.section--opt-margin-negative .card:nth-child(13) {
+  z-index: 13;
+}
+.section--opt-margin-negative .card:nth-child(14) {
+  z-index: 14;
+}
+.section--opt-margin-negative .card:nth-child(15) {
+  z-index: 15;
+}
+.section--opt-margin-negative .card:nth-child(16) {
+  z-index: 16;
+}
+.section--opt-margin-negative .card:nth-child(17) {
+  z-index: 17;
+}
+.section--opt-margin-negative .card:nth-child(18) {
+  z-index: 18;
+}
+.section--opt-margin-negative .card:nth-child(19) {
+  z-index: 19;
+}
+.section--opt-margin-negative .card:nth-child(20) {
+  z-index: 20;
+}
+.section--opt-margin-negative .card:nth-child(21) {
+  z-index: 21;
+}
+.section--opt-margin-negative .card:nth-child(22) {
+  z-index: 22;
+}
+.section--opt-margin-negative .card:nth-child(23) {
+  z-index: 23;
+}
+.section--opt-margin-negative .card:nth-child(24) {
+  z-index: 24;
+}
+.section--opt-margin-negative .card:nth-child(25) {
+  z-index: 25;
+}
+.section--opt-margin-negative .card:nth-child(26) {
+  z-index: 26;
+}
+.section--opt-margin-negative .card:nth-child(27) {
+  z-index: 27;
+}
+.section--opt-margin-negative .card:nth-child(28) {
+  z-index: 28;
+}
+.section--opt-margin-negative .card:nth-child(29) {
+  z-index: 29;
+}
+.section--opt-margin-negative .card:nth-child(30) {
+  z-index: 30;
+}
+.section--opt-margin-negative .card:nth-child(31) {
+  z-index: 31;
+}
+.section--opt-margin-negative .card:nth-child(32) {
+  z-index: 32;
+}
+.section--opt-margin-negative .card:nth-child(33) {
+  z-index: 33;
+}
+.section--opt-margin-negative .card:nth-child(34) {
+  z-index: 34;
+}
+.section--opt-margin-negative .card:nth-child(35) {
+  z-index: 35;
+}
+.section--opt-margin-negative .card:nth-child(36) {
+  z-index: 36;
+}
+.section--opt-margin-negative .card:nth-child(37) {
+  z-index: 37;
+}
+.section--opt-margin-negative .card:nth-child(38) {
+  z-index: 38;
+}
+.section--opt-margin-negative .card:nth-child(39) {
+  z-index: 39;
+}
+.section--opt-margin-negative .card:nth-child(40) {
+  z-index: 40;
+}
+.section--opt-margin-negative .card:nth-child(41) {
+  z-index: 41;
+}
+.section--opt-margin-negative .card:nth-child(42) {
+  z-index: 42;
+}
+.section--opt-margin-negative .card:nth-child(43) {
+  z-index: 43;
+}
+.section--opt-margin-negative .card:nth-child(44) {
+  z-index: 44;
+}
+.section--opt-margin-negative .card:nth-child(45) {
+  z-index: 45;
+}
+.section--opt-margin-negative .card:nth-child(46) {
+  z-index: 46;
+}
+.section--opt-margin-negative .card:nth-child(47) {
+  z-index: 47;
+}
+.section--opt-margin-negative .card:nth-child(48) {
+  z-index: 48;
+}
+.section--opt-margin-negative .card:nth-child(49) {
+  z-index: 49;
+}
+.section--opt-margin-negative .card:nth-child(50) {
+  z-index: 50;
+}
+.section--opt-margin-negative .card:nth-child(51) {
+  z-index: 51;
+}
+.section--opt-margin-negative .card:nth-child(52) {
+  z-index: 52;
+}
+.section--opt-margin-negative .card:nth-child(53) {
+  z-index: 53;
+}
+.section--opt-margin-negative .card:nth-child(54) {
+  z-index: 54;
+}
+.section--opt-margin-negative .card:nth-child(55) {
+  z-index: 55;
+}
+.section--opt-margin-negative .card:nth-child(56) {
+  z-index: 56;
+}
+.section--opt-margin-negative .card:nth-child(57) {
+  z-index: 57;
+}
+.section--opt-margin-negative .card:nth-child(58) {
+  z-index: 58;
+}
+.section--opt-margin-negative .card:nth-child(59) {
+  z-index: 59;
+}
+.section--opt-margin-negative .card:nth-child(60) {
+  z-index: 60;
+}
+.section--opt-margin-negative .card:nth-child(61) {
+  z-index: 61;
+}
+.section--opt-margin-negative .card:nth-child(62) {
+  z-index: 62;
+}
+.section--opt-margin-negative .card:nth-child(63) {
+  z-index: 63;
+}
+.section--opt-margin-negative .card:nth-child(64) {
+  z-index: 64;
+}
+.section--opt-margin-negative .card:nth-child(65) {
+  z-index: 65;
+}
+.section--opt-margin-negative .card:nth-child(66) {
+  z-index: 66;
+}
+.section--opt-margin-negative .card:nth-child(67) {
+  z-index: 67;
+}
+.section--opt-margin-negative .card:nth-child(68) {
+  z-index: 68;
+}
+.section--opt-margin-negative .card:nth-child(69) {
+  z-index: 69;
+}
+.section--opt-margin-negative .card:nth-child(70) {
+  z-index: 70;
+}
+.section--opt-margin-negative .card:nth-child(71) {
+  z-index: 71;
+}
+.section--opt-margin-negative .card:nth-child(72) {
+  z-index: 72;
+}
+.section--opt-margin-negative .card:nth-child(73) {
+  z-index: 73;
+}
+.section--opt-margin-negative .card:nth-child(74) {
+  z-index: 74;
+}
+.section--opt-margin-negative .card:nth-child(75) {
+  z-index: 75;
+}
+.section--opt-margin-negative .card:nth-child(76) {
+  z-index: 76;
+}
+.section--opt-margin-negative .card:nth-child(77) {
+  z-index: 77;
+}
+.section--opt-margin-negative .card:nth-child(78) {
+  z-index: 78;
+}
+.section--opt-margin-negative .card:nth-child(79) {
+  z-index: 79;
+}
+.section--opt-margin-negative .card:nth-child(80) {
+  z-index: 80;
+}
+.section--opt-margin-negative .card:nth-child(81) {
+  z-index: 81;
+}
+.section--opt-margin-negative .card:nth-child(82) {
+  z-index: 82;
+}
+.section--opt-margin-negative .card:nth-child(83) {
+  z-index: 83;
+}
+.section--opt-margin-negative .card:nth-child(84) {
+  z-index: 84;
+}
+.section--opt-margin-negative .card:nth-child(85) {
+  z-index: 85;
+}
+.section--opt-margin-negative .card:nth-child(86) {
+  z-index: 86;
+}
+.section--opt-margin-negative .card:nth-child(87) {
+  z-index: 87;
+}
+.section--opt-margin-negative .card:nth-child(88) {
+  z-index: 88;
+}
+.section--opt-margin-negative .card:nth-child(89) {
+  z-index: 89;
+}
+.section--opt-margin-negative .card:nth-child(90) {
+  z-index: 90;
+}
+.section--opt-margin-negative .card:nth-child(91) {
+  z-index: 91;
+}
+.section--opt-margin-negative .card:nth-child(92) {
+  z-index: 92;
+}
+.section--opt-margin-negative .card:nth-child(93) {
+  z-index: 93;
+}
+.section--opt-margin-negative .card:nth-child(94) {
+  z-index: 94;
+}
+.section--opt-margin-negative .card:nth-child(95) {
+  z-index: 95;
+}
+.section--opt-margin-negative .card:nth-child(96) {
+  z-index: 96;
+}
+.section--opt-margin-negative .card:nth-child(97) {
+  z-index: 97;
+}
+.section--opt-margin-negative .card:nth-child(98) {
+  z-index: 98;
+}
+.section--opt-margin-negative .card:nth-child(99) {
+  z-index: 99;
+}
+.section--opt-margin-negative .card:nth-child(100) {
+  z-index: 100;
+}
+.card:nth-child(1) {
+  margin-top: 0;
+}
+.card__top {
+  padding-block: var(--card-m-y);
+  padding-inline: var(--card-m-x);
+}
+.card__middle {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__bottom {
+  padding-block: var(--card-m-y);
+  padding-inline: var(--card-m-x);
+}
+.card__author {
+  font-weight: 600;
+}
+.card__title {
+  font-weight: 600;
+}
+.card__subtitle {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: oklch(0.5 0 0);
+}
+.card__desc {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.card--type-new::after {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  content: "N";
+  height: 1lh;
+  aspect-ratio: 1/1;
+  font-size: 0.875rem;
+  color: #fff;
+  display: block;
+  font-weight: 600;
+  text-align: center;
+  background-color: #ff0000;
+  border-radius: 624.9375rem;
+}
+.card--pos-rel {
+  position: relative;
+}

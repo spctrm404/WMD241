@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --card-m-y: 1rem;
+  --card-m-x: 1.5rem;
+}
+
+.card {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  // margin-top: 2rem;
+  background-color: oklch(1 0 0);
+  border: 1px solid oklch(0.5 0 0);
+  border-radius: 0.75rem;
+  .section--opt-pos-rel & {
+    position: relative;
+    &:nth-child(1) {
+      left: 1rem;
+    }
+    &:nth-child(2) {
+      left: 2rem;
+      top: -10rem;
+    }
+    &:nth-child(3) {
+      left: 3rem;
+      top: -20rem;
+    }
+    &:nth-child(4) {
+      left: 4rem;
+      top: -30rem;
+    }
+    &:nth-child(5) {
+      left: 5rem;
+      top: -40rem;
+    }
+  }
+  .section--opt-margin-negative & {
+    margin-top: -10rem;
+    position: relative;
+    &:first-child {
+      margin-top: 0;
+    }
+    // &:nth-child(1) {
+    //   z-index: 1;
+    // }
+    // &:nth-child(2) {
+    //   z-index: 2;
+    // }
+    // &:nth-child(3) {
+    //   z-index: 3;
+    // }
+    // &:nth-child(4) {
+    //   z-index: 4;
+    // }
+    // &:nth-child(5) {
+    //   z-index: 5;
+    // }
+    @for $i from 1 through 100 {
+      &:nth-child(#{$i}) {
+        z-index: #{$i};
+      }
+    }
+  }
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+  &__top {
+    padding-block: var(--card-m-y);
+    padding-inline: var(--card-m-x);
+  }
+  &__middle {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  &__bottom {
+    padding-block: var(--card-m-y);
+    padding-inline: var(--card-m-x);
+  }
+  &__author {
+    font-weight: 600;
+  }
+  &__author-role {
+  }
+  &__title {
+    font-weight: 600;
+  }
+  &__subtitle {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: oklch(0.5 0 0);
+  }
+  &__desc {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  &--type-new {
+    &::after {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      content: 'N';
+      height: 1lh;
+      aspect-ratio: 1 / 1;
+      font-size: 0.875rem;
+      color: #fff;
+      display: block;
+      font-weight: 600;
+      text-align: center;
+      background-color: #ff0000;
+      border-radius: 624.9375rem;
+    }
+  }
+  &--pos-rel {
+    position: relative;
+  }
+}

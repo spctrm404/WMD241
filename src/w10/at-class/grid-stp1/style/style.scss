@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+.section {
+  padding-block: 1.5rem;
+}
+
+.section > h2 {
+  max-width: 60rem;
+  margin-inline: auto;
+  margin-block: 0;
+  padding-inline: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.container {
+  max-width: 60rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  background-color: oklch(0.95 0.01 240);
+}
+
+.grid {
+  display: grid;
+
+  &__item {
+    &--nth {
+      @for $i from 1 through 12 {
+        &-#{$i} {
+          background-color: oklch(0.9 0.05 $i * 30);
+        }
+      }
+    }
+  }
+
+  &--opt-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4fr;
+    grid-auto-rows: 1fr;
+    column-gap: 0.75rem;
+    row-gap: 1.5rem;
+  }
+
+  &--opt-2 {
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: 200px repeat(2, 1fr);
+    // 패륜 (부모 뿌셔 부모 찢어)
+    // grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+    column-gap: 0.75rem;
+    row-gap: 1.5rem;
+  }
+}

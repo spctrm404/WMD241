@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: oklch(0.2 0 0);
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+.container {
+  display: grid;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  grid-template-columns: 12.5rem repeat(auto-fit, minmax(240px, 1fr));
+  max-width: 80rem;
+  padding: 0.75rem;
+  background-color: oklch(0.5 0 0);
+  margin-inline: auto;
+}
+
+.sidebar {
+  grid-column: 1 / span 1;
+  grid-row: 1 / -1;
+  background-color: #fff;
+  padding: 0.75rem;
+}
+
+.card-collection {
+  row-gap: 1.5rem;
+  display: grid;
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  grid-template-columns: subgrid;
+  grid-auto-rows: subgrid;
+}
+
+.title {
+  grid-column: 1 / -1;
+}
