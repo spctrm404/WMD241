@@ -1,0 +1,431 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 1fr;
+  background-color: oklch(0.95 0 0);
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 1rem;
+  background-color: oklch(0.9 0.2 240);
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: all 300ms ease-in-out;
+}
+.card:hover {
+  background-color: oklch(0.9 0.2 120);
+}
+.container[data-selected="0"] .card:nth-child(0) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="1"] .card:nth-child(1) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="2"] .card:nth-child(2) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="3"] .card:nth-child(3) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="4"] .card:nth-child(4) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="5"] .card:nth-child(5) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="6"] .card:nth-child(6) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="7"] .card:nth-child(7) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="8"] .card:nth-child(8) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="9"] .card:nth-child(9) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="10"] .card:nth-child(10) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="11"] .card:nth-child(11) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="12"] .card:nth-child(12) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="13"] .card:nth-child(13) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="14"] .card:nth-child(14) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="15"] .card:nth-child(15) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="16"] .card:nth-child(16) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="17"] .card:nth-child(17) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="18"] .card:nth-child(18) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="19"] .card:nth-child(19) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="20"] .card:nth-child(20) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="21"] .card:nth-child(21) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="22"] .card:nth-child(22) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="23"] .card:nth-child(23) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="24"] .card:nth-child(24) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="25"] .card:nth-child(25) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="26"] .card:nth-child(26) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="27"] .card:nth-child(27) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="28"] .card:nth-child(28) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="29"] .card:nth-child(29) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="30"] .card:nth-child(30) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="31"] .card:nth-child(31) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="32"] .card:nth-child(32) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="33"] .card:nth-child(33) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="34"] .card:nth-child(34) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="35"] .card:nth-child(35) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="36"] .card:nth-child(36) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="37"] .card:nth-child(37) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="38"] .card:nth-child(38) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="39"] .card:nth-child(39) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="40"] .card:nth-child(40) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="41"] .card:nth-child(41) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="42"] .card:nth-child(42) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="43"] .card:nth-child(43) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="44"] .card:nth-child(44) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="45"] .card:nth-child(45) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="46"] .card:nth-child(46) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="47"] .card:nth-child(47) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="48"] .card:nth-child(48) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="49"] .card:nth-child(49) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="50"] .card:nth-child(50) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="51"] .card:nth-child(51) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="52"] .card:nth-child(52) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="53"] .card:nth-child(53) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="54"] .card:nth-child(54) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="55"] .card:nth-child(55) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="56"] .card:nth-child(56) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="57"] .card:nth-child(57) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="58"] .card:nth-child(58) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="59"] .card:nth-child(59) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="60"] .card:nth-child(60) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="61"] .card:nth-child(61) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="62"] .card:nth-child(62) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="63"] .card:nth-child(63) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="64"] .card:nth-child(64) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="65"] .card:nth-child(65) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="66"] .card:nth-child(66) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="67"] .card:nth-child(67) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="68"] .card:nth-child(68) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="69"] .card:nth-child(69) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="70"] .card:nth-child(70) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="71"] .card:nth-child(71) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="72"] .card:nth-child(72) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="73"] .card:nth-child(73) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="74"] .card:nth-child(74) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="75"] .card:nth-child(75) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="76"] .card:nth-child(76) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="77"] .card:nth-child(77) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="78"] .card:nth-child(78) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="79"] .card:nth-child(79) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="80"] .card:nth-child(80) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="81"] .card:nth-child(81) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="82"] .card:nth-child(82) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="83"] .card:nth-child(83) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="84"] .card:nth-child(84) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="85"] .card:nth-child(85) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="86"] .card:nth-child(86) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="87"] .card:nth-child(87) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="88"] .card:nth-child(88) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="89"] .card:nth-child(89) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="90"] .card:nth-child(90) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="91"] .card:nth-child(91) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="92"] .card:nth-child(92) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="93"] .card:nth-child(93) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="94"] .card:nth-child(94) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="95"] .card:nth-child(95) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="96"] .card:nth-child(96) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="97"] .card:nth-child(97) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="98"] .card:nth-child(98) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="99"] .card:nth-child(99) {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container[data-selected="100"] .card:nth-child(100) {
+  border: 2px solid rgb(0, 0, 0);
+}
