@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+.grid {
+  margin-inline: auto;
+  padding-inline: 30px;
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(15.625rem, 1fr));
+  gap: 30px;
+}
+
+#lottie1 {
+  aspect-ratio: 400/400;
+}

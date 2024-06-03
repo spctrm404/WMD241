@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lottie example</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+  </head>
+  <body>
+    <div class="grid">
+      <lottie-player
+        src="https://lottie.host/b5cfd8a8-97f2-46e0-9708-d933131c04e9/x8AUe9JThr.json"
+        id="lottie-1"
+        class="lottie"
+      ></lottie-player>
+    </div>
+    <script>
+      LottieInteractivity.create({
+        player: '#lottie-1',
+        mode: 'cursor',
+        actions: [
+          {
+            type: 'click',
+            forceFlag: false,
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
