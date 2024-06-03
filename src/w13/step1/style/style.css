@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 75rem;
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+  background-color: aqua;
+}
+
+.yt-video {
+  margin-inline: auto;
+  width: 100%;
+}
+
+#video1 {
+  aspect-ratio: 560/315;
+}
+
+#video2 {
+  aspect-ratio: 560/315;
+}
+
+img,
+iframe {
+  display: block;
+}

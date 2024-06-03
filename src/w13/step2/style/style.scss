@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+  margin-block-end: 0;
+}
+
+.container {
+  max-width: 60rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  background-color: aqua;
+}
+
+.lottie {
+  aspect-ratio: 300 / 300;
+  margin-inline: auto;
+  display: block;
+  width: 25%;
+}
