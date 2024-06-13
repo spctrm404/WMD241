@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.section {
+  background-color: oklch(0.8 0.15 0);
+}
+
+.container {
+  background-color: oklch(0.6 0.15 0);
+  max-width: 60rem;
+  margin-inline: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.flex {
+  padding: 24px;
+  background-color: oklch(0.4 0.15 120);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
